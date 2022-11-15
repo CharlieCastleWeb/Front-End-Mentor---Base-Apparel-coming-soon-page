@@ -19,6 +19,41 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--dark-grayish-red);
+}
+
+.special-text,
+p {
+    color: var(--desaturated-red);
+}
+
+.special-text {
+    font-weight: 300;
+}
+
+p {
+    text-align: center;
+    line-height: 1.6em;
+    font-size: 0.9rem;
+}
+
+::placeholder {
+    color: var(--desaturated-red);
+    opacity: 0.6;
+}
+
+.submit-email {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
 }
 
 .attribution { 
@@ -31,6 +66,70 @@ body {
 }
 
 /* LAYOUT */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+}
+
+.logo {
+    margin-top: 1.8em;
+    margin-left: 1.5em;
+    margin-bottom: 1.8em;
+    width: 120px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1em;
+}
+
+p,
+.email-form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+p {
+    margin-top: 2em;
+}
+
+.email-form {
+    position: relative;
+}
+
+input {
+    display: block;
+    margin-top: 3em;
+    border: 1px solid var(--desaturated-red);
+    padding: 1.5em 2em;
+    border-radius: 50px;
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+.submit-email {
+    display: inline;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    height: 100%;
+    border-radius: 50px;
+    width: 25%;
+    border: none;
+    background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+}
+
+footer {
+    margin-top: auto;
+    margin-bottom: 1em;
+}
 
 /* MEDIA QUERIES */
 
