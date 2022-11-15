@@ -81,6 +81,12 @@ body {
     width: 120px;
 }
 
+.hero-image {
+    min-width: 100%;
+    height: auto;
+    display: block;
+}
+
 h1 {
     text-align: center;
     margin-top: 1em;
@@ -124,6 +130,7 @@ input:focus {
     width: 25%;
     border: none;
     background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    box-shadow: 0px 10px 15px 5px rgba(238, 140, 140, 0.4);
 }
 
 footer {
@@ -133,5 +140,73 @@ footer {
 
 /* MEDIA QUERIES */
 
+@media (min-width: 750px) {
+    body {
+        background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    }
 
+    main {
+        width: 30%;
+        margin-top: 2em;
+        padding-left: 0;
+    }
+
+    main, footer {
+        margin-left: 12%;
+    }
+
+    .logo {
+        display: inline;
+        margin-left: 0;
+    }
+
+    h1,
+    p {
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 4rem;
+        margin-top: 1.5em;
+    }
+
+    p {
+        font-size: 1rem;
+        margin-top: 2em;
+    }
+
+    .email-form {
+        margin-top: 1em;
+    }
+
+    p,
+    .email-form {
+        width: 100%;
+    }
+
+    .hero-image {
+        min-width: 300px;
+        width: 40%;
+        object-fit: cover;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        /* position: absolute;
+        right: 0;
+        top: 0;
+        width: 100px;
+        height: 100vh; */
+    }
+
+    footer {
+        align-self: flex-start;
+    }
+
+    /*.hero-image {
+    min-width: 100%;
+    height: auto;
+    display: block;
+}*/
+}
 
