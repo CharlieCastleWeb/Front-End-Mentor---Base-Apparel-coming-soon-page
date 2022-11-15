@@ -13,6 +13,8 @@
   <script src="https://kit.fontawesome.com/adc6e39057.js" crossorigin="anonymous"></script>
 
   <link rel="stylesheet" href="styles.css">
+
+  
   
   <title>Frontend Mentor | Base Apparel coming soon page</title>
 
@@ -32,11 +34,23 @@
     <p>Hello fellow shoppers! We're currently building our new fashion store. 
       Add your email below to stay up-to-date with announcements and our launch deals.</p>
     
-    <div class="email-form">
-      <input type="email" placeholder="Email Address">
-      <button class="submit-email"><i class="fa fa-chevron-right"></i></button>
-    </div>
-    
+    <form class="email-form">
+      
+      <input 
+        type="text" 
+        placeholder="Email Address" 
+        id="email-input"
+        >
+      <button 
+        class="submit-email" 
+        id="submit-button" 
+        type="submit"
+        >
+          <i class="fa fa-chevron-right"></i>
+      </button>
+      <i class="fa fa-exclamation-circle exclamation"></i>
+    </form>
+    <p class="email-validation">Email is ok</p>
   </main>
   <footer>
     <p class="attribution">
@@ -44,5 +58,7 @@
       Coded by <a href="https://carloscastillo.dev/" target="_blank">Carlos Castillo</a>.
     </p>
   </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
